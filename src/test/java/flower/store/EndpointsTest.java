@@ -19,7 +19,7 @@ public class EndpointsTest {
     @Test
     public void testDeliveryStrategies() throws Exception {
 
-        mockMvc.perform(MockMvcRequestBuilders.get("/api/flowers/delivery"))
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/flowers/payment"))
                 .andExpect(MockMvcResultMatchers.status().isOk());
     }
 
