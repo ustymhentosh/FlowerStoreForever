@@ -13,12 +13,13 @@ import flower.store.FlowerType;
 @RestController
 @RequestMapping("/api/flowers")
 public class FlowerController {
-    
+    public static final int sepalLength = 115;
+    public static final int price = 70;
     @GetMapping("/list")
     public List<Flower> getFlowers() {
         return List.of(new Flower(
-            20, FlowerColor.RED,
-            6.3, FlowerType.CHAMOMILE));
+            sepalLength, FlowerColor.RED,
+            price, FlowerType.CHAMOMILE));
     }
 
 }

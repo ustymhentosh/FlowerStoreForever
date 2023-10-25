@@ -23,7 +23,7 @@ public class Order {
 
     public float calculateTotalPrice() {
         float totalPrice = 0;
-        for (int i = 0; i < this.items.size(); i++){
+        for (int i = 0; i < this.items.size(); i++) {
             totalPrice += this.items.get(i).getPrice();
         }
         return totalPrice;
