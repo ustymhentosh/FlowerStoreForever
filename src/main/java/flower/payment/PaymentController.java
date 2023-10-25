@@ -11,8 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class PaymentController {
     
     @GetMapping("/payment")
-    public List getDeliveryStrategies(){
-        return List.of(PayPalPaymentStrategy.class, CreditCardPaymentStrategy.class);
+    public List getDeliveryStrategies() {
+        return List.of(
+            PayPalPaymentStrategy.class,
+            CreditCardPaymentStrategy.class);
     }
 
 }

@@ -13,15 +13,15 @@ public class Order {
     private Payment payment;
     private Delivery delivery;
 
-    public void setPaymentStrategy(Payment stratedy){
+    public void setPaymentStrategy(Payment stratedy) {
         this.payment = stratedy;
     }
 
-    public void setDeliveryStrategy(Delivery stratedy){
+    public void setDeliveryStrategy(Delivery stratedy) {
         this.delivery = stratedy;
     }
 
-    public float calculateTotalPrice(){
+    public float calculateTotalPrice() {
         float totalPrice = 0;
         for (int i = 0; i < this.items.size(); i++){
             totalPrice += this.items.get(i).getPrice();
@@ -29,15 +29,15 @@ public class Order {
         return totalPrice;
     }
 
-    public void placeOrder(){
+    public void placeOrder() {
         System.out.println("Order Placed");
     }
 
-    public void addItem(Item item){
+    public void addItem(Item item) {
         this.items.add(item);
     }
 
-    public void removeItem(Item item){
+    public void removeItem(Item item) {
         this.items.remove(item);
     }
 }

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DeliveryController {
     
     @GetMapping("/delivery")
-    public List getDeliveryStrategies(){
+    public List getDeliveryStrategies() {
         return List.of(DHLDeliveryStrategy.class, PostDeliveryStrategy.class);
     }
 

@@ -15,8 +15,10 @@ import flower.store.FlowerType;
 public class FlowerController {
     
     @GetMapping("/list")
-    public List<Flower> getFlowers(){
-        return List.of(new Flower(19, FlowerColor.RED, 6.3, FlowerType.CHAMOMILE));
+    public List<Flower> getFlowers() {
+        return List.of(new Flower(
+            20, FlowerColor.RED,
+            6.3, FlowerType.CHAMOMILE));
     }
 
 }
