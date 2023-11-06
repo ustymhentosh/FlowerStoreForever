@@ -12,7 +12,7 @@ import com.example.flower.store.Item;
 
 public class DecoratorTest {
     @Test
-    public void TestBasketDecorator() {
+    public void testBasketDecorator() {
         Item itemToDecorate = new FlowerBucket();
         BasketDecorator basketDecorator = 
             new BasketDecorator(itemToDecorate);
@@ -21,7 +21,7 @@ public class DecoratorTest {
     }
 
     @Test
-    public void TestRibbonDecorator() {
+    public void testRibbonDecorator() {
         Item itemToDecorate = new FlowerBucket();
         RibbonDecorator ribbonDecorator = 
             new RibbonDecorator(itemToDecorate);
@@ -30,7 +30,7 @@ public class DecoratorTest {
     }
 
     @Test
-    public void TestPaperDecorator() {
+    public void testPaperDecorator() {
         Item itemToDecorate = new FlowerBucket();
         PaperDecorator paperDecorator = 
             new PaperDecorator(itemToDecorate);
