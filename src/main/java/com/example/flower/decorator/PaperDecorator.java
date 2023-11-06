@@ -6,7 +6,7 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 public class PaperDecorator extends Decorator {
-    Item item;
+    private Item item;
 
     @Override
     void getDescription() {
@@ -14,7 +14,8 @@ public class PaperDecorator extends Decorator {
     }
 
     public double getPrice() {
-        return 13 + item.getPrice();
+        final int THIRTEEN = 13;
+        return THIRTEEN + item.getPrice();
     }
     
 }

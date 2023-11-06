@@ -6,15 +6,16 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 public class BasketDecorator extends Decorator {
-    Item item;
+    private Item item;
 
     @Override
     void getDescription() {
         System.out.println("Basket");
     }
 
-    public double getPrice(){
-        return 4 + item.getPrice();
+    public double getPrice() {
+        final int HUNDRED = 4;
+        return HUNDRED + item.getPrice();
     }
     
 }

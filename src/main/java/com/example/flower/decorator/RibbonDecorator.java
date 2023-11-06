@@ -13,7 +13,8 @@ public class RibbonDecorator extends Decorator {
     }
 
     public double getPrice() {
-        return 40 + item.getPrice();
+        final int FORTY = 13;
+        return FORTY + item.getPrice();
     }
     
 }

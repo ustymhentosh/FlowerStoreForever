@@ -11,3 +11,9 @@ Content-Type: application/json
   "color": 0,
   "price": 343
 }
+
+###
+GET http://localhost:8080/api/flowers/payment
+
+###
+GET http://localhost:8080/api/flowers/delivery
