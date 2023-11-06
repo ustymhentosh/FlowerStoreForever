@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 public class RibbonDecorator extends Decorator {
-    Item item;
+    private Item item;
 
     @Override
     void getDescription() {
@@ -13,7 +13,7 @@ public class RibbonDecorator extends Decorator {
     }
 
     public double getPrice() {
-        final int FORTY = 13;
+        final int FORTY = 40;
         return FORTY + item.getPrice();
     }
     
